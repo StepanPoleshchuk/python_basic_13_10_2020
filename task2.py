@@ -6,8 +6,11 @@
 '''
 
 
+from functions import my_range
+
+
 def shift(*args):
-    return [(user_list[i+1], user_list[i]) for i in range(len(user_list)-1)]  #возвращает список кортежей, в котором первый элемент сдвинут
+    return [(user_list[i+1], user_list[i]) for i in my_range(len(user_list)-1)]  #возвращает список кортежей, в котором первый элемент сдвинут
 
 
 while True:
